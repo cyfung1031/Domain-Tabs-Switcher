@@ -1,0 +1,16 @@
+{
+  "name": "Domain Tabs Switcher",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "CY Fung",
+  "license": "MIT",
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "crx": "^5.0.1",
+    "web-ext": "^8.3.0"
+  }
+}
