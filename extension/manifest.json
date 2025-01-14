@@ -1,0 +1,17 @@
+{
+    "name": "Domain Tabs Switcher",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Auto detect and refresh the list of windows/tabs in the same domain as the current tab. Show the number of entries in the extension icon. Click the icon to popup the list. Click on a list entry to switch focus to that window/tab.",
+    "permissions": [
+      "tabs", "scripting", "storage", "windows"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["http://*/*", "https://*/*"]
+  }
+  

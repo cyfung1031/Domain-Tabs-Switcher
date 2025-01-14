@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 500px; /* Increase or decrease as needed */
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  #tabsList {
+    padding: 10px;
+  }
+
+.tab-entry {
+	margin: 8px 0;
+	cursor: pointer;
+	text-decoration: underline;
+	color: var(--text-color);
+}
+
+
+.tab-entry-discarded {
+	color: var(--text-color-2);
+    cursor:not-allowed !important;
+}
+.tab-entry-loading {
+	color: var(--text-color-2);
+}
+
+.tab-entry-audible {
+
+    color:rgb(250, 187, 93);
+}
+.tab-entry-background{
+    opacity:0.65;
+}
+.tab-entry-foreground{
+    font-weight: 600;
+}
+
+.tab-entry-pinned {
+    font-weight: 800;
+}
+
+  a[href]{
+    color: currentColor;
+  }
+
+
+  body {
+
+    background-color:#e8e8e8;
+    color:#212121;
+    --text-color: #212121;
+    --text-color-2:  rgb(110, 110, 110);
+    --color-del-btn-bg:rgb(240, 201, 210);
+    --color-del-btn-text:rgb(116, 18, 65);
+  }
+
+  [dark] body {
+
+    background-color:#252525;
+    color:#ebebeb;
+    --text-color: #ebebeb;
+    --text-color-2:  rgb(163, 163, 163);
+    --color-del-btn-bg:rgb(79, 43, 51);
+    --color-del-btn-text:rgb(255, 102, 176);
+  }
+
+  .tab-entry-del-btn {
+
+    background-color:var(--color-del-btn-bg);
+    color:var(--color-del-btn-text);
+    padding:2px 8px;
+    margin:4px;
+    display:inline-block;
+    border-radius: 9999px;
+    font-family: monospace;
+    opacity: 0.8;
+    border:1px solid rgb(112, 112, 112);
+  }
+
+  .tab-entry-del-btn:hover{
+    opacity:1;
+  }
